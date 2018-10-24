@@ -1,0 +1,5 @@
+1、分析http://images.so.com/--摄影，加载为Ajax请求，接着分析其参数。
+2、在spiders--images内，使用start_requests()方法构造请求，最后将Request得到的response返回给parse分析。
+3、定义items，设置提取的信息
+4、在spiders--images内，使用parse()方法提取信息。
+5、存储信息，在pipelines.py内定义MongoDB、MySQL、Images的存储类方法。同时在settings中设置相应的参数，同时在ITEM_PIPELINES内设置pipeline的执行顺序。
